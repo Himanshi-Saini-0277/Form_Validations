@@ -2,7 +2,8 @@
 This project is a simple registration form built using HTML, CSS, and JavaScript. The form includes fields for the user's name, email, password, and confirm password. It also includes real-time validation for password strength and matching passwords, and displays a warning if the Caps Lock key is on.
 
 #### Features
-Password Requirements: 1. Password must meet the following criteria:
+Password Requirements: 
+1. Password must meet the following criteria:
   - At least 8 characters long
   - Contains at least 1 lowercase character
   - Contains at least 1 uppercase character
