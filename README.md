@@ -4,11 +4,11 @@ This project is a simple registration form built using HTML, CSS, and JavaScript
 #### Features
 Password Requirements: 
 1. Password must meet the following criteria:
-  - At least 8 characters long
-  - Contains at least 1 lowercase character
-  - Contains at least 1 uppercase character
-  - Contains at least 1 numerical value
-  - Contains at least 1 special character
+   - At least 8 characters long
+   - Contains at least 1 lowercase character
+   - Contains at least 1 uppercase character
+   - Contains at least 1 numerical value
+   - Contains at least 1 special character
 2. Real-Time Validation: Password requirements change color from blue to green when the condition is met.
 3. Caps Lock Warning: Displays a warning if the Caps Lock key is on while typing the password.
 4. Show/Hide Password: Allows the user to toggle the visibility of the password fields.
