@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: cornflowerblue;
+        }
+        .container {
+            background: whitesmoke;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+            width: 300px;
+            position: relative;
+        }
+        .container h2 {
+            font-size: 23px;
+            margin: 0 0 15px;
+        }
+        .container label {
+            display: block;
+            margin-top: 10px;
+        }
+        .container input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .container button {
+            margin-top: 15px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .password-check {
+            color: blue;
+            font-size: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #alert, #alert-caps {
+            color: red;
+            font-size: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form onsubmit="return validate()">
+            <div>
+                <label>Name:</label>
+                <input type="text" name="name"/>
+            </div>
+            <div>
+                <label>Email Id:</label>
+                <input type="email" name="email"/>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" id="password" onkeyup="passCheck(this.value)" />
+            </div>
+            <div>
+                <label>Confirm Password:</label>
+                <input type="password" id="confirmPassword" onkeyup="check(this)" />
+            </div>
+            <br>
+            <div id="alert"></div>
+            <div id="alert-caps"></div>
+            <br>
+            <div>
+                <button type="button" onclick="toggle(this)">Show Password</button>
+                <button type="submit">Register</button>
+            </div>
+            <br>
+            <div>
+                <label class="password-check">8 characters</label>
+                <label class="password-check">1 lower case character</label>
+                <label class="password-check">1 upper case character</label>
+                <label class="password-check">1 numerical value</label>
+                <label class="password-check">1 special character</label>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

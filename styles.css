@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.out {
+    background: cornflowerblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: whitesmoke;
+    width: 500px;
+    height: 550px;
+    padding: 10px;
+    border: 2px black solid;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.name {
+    margin-top: 15px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
